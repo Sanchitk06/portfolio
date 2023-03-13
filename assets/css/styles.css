@@ -675,7 +675,7 @@ img {
 
 /* MEDIA QUERIES */
 /* For extra small devices */
-@media screen and (max-width: 425px){
+@media screen and (max-width: 375px){
   .container{
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -709,6 +709,18 @@ img {
     padding: 0 .5rem;
   }
   .skill_container>p {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 2rem;
+  }
+  .skill_container img{
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media screen and ((min-width: 375px) and (max-width:425px)){
+    .skill_container>p {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     row-gap: 2rem;
